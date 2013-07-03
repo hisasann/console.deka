@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript">
+    console.deka = function(string) {
+      var option = 'font-size: 200px; font-weight: bold; color: #FF8E8E;';
+      console.log('%c' + string, option);
+    }
+
+    $(function() {
+      $('#deka').click(function(e) {
+        e.preventDefault();
+
+        console.deka('デカすぎっ！');
+      });
+    });
+  </script>
+</head>
+<body>
+
+<input id="deka" type="button" value="でかっ！"/>
+
+</body>
+</html>
